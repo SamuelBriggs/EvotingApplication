@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37f2edfb-dc5b-4a36-be6d-0c3eb22f2dcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/models/Candidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/models/Party.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/models/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/models/Voter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositories/CandidateRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositories/VoterRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/models.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/CandidateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/CandidateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/CandidateRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/CandidateRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CandidateTests/CandidateRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CandidateTests/CandidateRepositoryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/votingApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/votingApp.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +30,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="data.models" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CandidateRepositoryTests.findCandidateByPartyAndPosition">
+    <configuration name="CandidateRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="votingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CandidateTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CandidateTests" />
+      <option name="MAIN_CLASS_NAME" value="CandidateTests.CandidateRepositoryTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CandidateRepositoryTests.findCandidateByPartyAndPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="votingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CandidateTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CandidateTests" />
+      <option name="MAIN_CLASS_NAME" value="CandidateTests.CandidateRepositoryTests" />
+      <option name="METHOD_NAME" value="findCandidateByPartyAndPosition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CandidateRepositoryTests.findCandidateByPartyAndPosition" />
+        <item itemvalue="JUnit.CandidateRepositoryTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
