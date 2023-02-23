@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37f2edfb-dc5b-4a36-be6d-0c3eb22f2dcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/models/models.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/models/Candidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/models/Party.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/models/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/models/Voter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/CandidateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/VoterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/models/models.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -33,6 +41,11 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="data.models" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
