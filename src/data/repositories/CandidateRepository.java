@@ -12,8 +12,12 @@ public interface CandidateRepository {
 
     Candidate findCandidateByPositionAndParty(Position position, Party party);
 
-
     int countAllCandidates();
+
+    List<Candidate> findAllCandidatesByPosition(Position position);
+
+    List<Candidate> findAllCandidatesByParty(Party party);
+
 
 
 

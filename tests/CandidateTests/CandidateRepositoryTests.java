@@ -8,11 +8,15 @@ import data.repositories.CandidateRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CandidateRepositoryTests {
 
     private Candidate candidate;
+
+    private Candidate candidate2;
     private CandidateRepository candidateRepository;
 
     @BeforeEach
@@ -20,9 +24,12 @@ public class CandidateRepositoryTests {
     public void setUp(){
         candidate = new Candidate();
         candidateRepository = new CandidateRepositoryImpl();
+        candidate2 = new Candidate();
         candidate.setName("Peter Obi");
         candidate.setParty(Party.LABOUR);
         candidate.setPosition(Position.PRESIDENT);
+        candidate2.setPosition(Position.PRESIDENT);
+
     }
     @Test
     public void saveOneCandidate_countOfAllCandidates_IsOne(){
@@ -56,6 +63,16 @@ public class CandidateRepositoryTests {
         candidateRepository.save(candidate);
         Candidate candidate1 = candidateRepository.findCandidateByPositionAndParty(Position.PRESIDENT, Party.LABOUR);
         assertEquals(candidate1, candidate);
+    }
+
+    @Test
+
+    public void returnAllCandidatesContestingInAPosition(){
+        candidateRepository.save(candidate);
+        candidateRepository.save(candidate2);
+       List<Candidate> candidates = candidateRepository.findAllCandidatesByPosition(Position.PRESIDENT);
+        System.out.println(candidates);
+
     }
 
 }

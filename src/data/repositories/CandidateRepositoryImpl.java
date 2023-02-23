@@ -48,4 +48,26 @@ public class CandidateRepositoryImpl implements CandidateRepository{
     public int countAllCandidates() {
         return candidates.size();
     }
+
+    @Override
+    public List<Candidate> findAllCandidatesByPosition(Position position) {
+        List<Candidate> validCandidates = new ArrayList<>();
+        for (int i = 0; i < candidates.size() ; i++) {
+            Candidate candidate = candidates.get(i);
+            boolean validCandidate = candidate.getPosition().equals(position);
+            if (validCandidate) validCandidates.add(candidate);
+        }
+        return validCandidates;
+    }
+
+    @Override
+    public List<Candidate> findAllCandidatesByParty(Party party) {
+        List<Candidate> validPartyCandidates = new ArrayList<>();
+        for (int i = 0; i < candidates.size() ; i++) {
+            Candidate candidate = candidates.get(i);
+            boolean validCandidate = candidate.getParty().equals(party);
+            if(validCandidate) validPartyCandidates.add(candidate);
+        }
+        return validPartyCandidates;
+    }
 }

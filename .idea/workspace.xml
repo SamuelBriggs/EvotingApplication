@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37f2edfb-dc5b-4a36-be6d-0c3eb22f2dcf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/VoterRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/VoterTests/VoterRepositoryImplTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/repositories/CandidateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/CandidateRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/repositories/CandidateRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/CandidateRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/CandidateTests/CandidateRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CandidateTests/CandidateRepositoryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/votingApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/votingApp.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +48,8 @@
       <recent name="data.models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CandidateRepositoryTests.findCandidateByPartyAndPosition">
-    <configuration name="CandidateRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.VoterRepositoryImplTests.deleteAVoter_countShouldDecreaseByOne">
+    <configuration name="CandidateRepositoryTests.returnAllCandidatesContestingInAPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="votingApp" />
       <extension name="coverage">
         <pattern>
@@ -58,22 +59,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="CandidateTests" />
       <option name="MAIN_CLASS_NAME" value="CandidateTests.CandidateRepositoryTests" />
+      <option name="METHOD_NAME" value="returnAllCandidatesContestingInAPosition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VoterRepositoryImplTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="votingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="VoterTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="VoterTests" />
+      <option name="MAIN_CLASS_NAME" value="VoterTests.VoterRepositoryImplTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CandidateRepositoryTests.findCandidateByPartyAndPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VoterRepositoryImplTests.deleteAVoter_countShouldDecreaseByOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="votingApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CandidateTests.*" />
+          <option name="PATTERN" value="VoterTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CandidateTests" />
-      <option name="MAIN_CLASS_NAME" value="CandidateTests.CandidateRepositoryTests" />
-      <option name="METHOD_NAME" value="findCandidateByPartyAndPosition" />
+      <option name="PACKAGE_NAME" value="VoterTests" />
+      <option name="MAIN_CLASS_NAME" value="VoterTests.VoterRepositoryImplTests" />
+      <option name="METHOD_NAME" value="deleteAVoter_countShouldDecreaseByOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VoterRepositoryImplTests.findVoterById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="votingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="VoterTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="VoterTests" />
+      <option name="MAIN_CLASS_NAME" value="VoterTests.VoterRepositoryImplTests" />
+      <option name="METHOD_NAME" value="findVoterById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VoterRepositoryImplTests.saveTwoVoters_votersCountIsTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="votingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="VoterTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="VoterTests" />
+      <option name="MAIN_CLASS_NAME" value="VoterTests.VoterRepositoryImplTests" />
+      <option name="METHOD_NAME" value="saveTwoVoters_votersCountIsTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,8 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CandidateRepositoryTests.findCandidateByPartyAndPosition" />
-        <item itemvalue="JUnit.CandidateRepositoryTests" />
+        <item itemvalue="JUnit.VoterRepositoryImplTests.deleteAVoter_countShouldDecreaseByOne" />
+        <item itemvalue="JUnit.VoterRepositoryImplTests" />
+        <item itemvalue="JUnit.VoterRepositoryImplTests.findVoterById" />
+        <item itemvalue="JUnit.CandidateRepositoryTests.returnAllCandidatesContestingInAPosition" />
+        <item itemvalue="JUnit.VoterRepositoryImplTests.saveTwoVoters_votersCountIsTwo" />
       </list>
     </recent_temporary>
   </component>
