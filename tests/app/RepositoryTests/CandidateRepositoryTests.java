@@ -4,7 +4,6 @@ import app.data.models.Candidate;
 import app.data.models.Party;
 import app.data.models.Position;
 import app.data.repositories.CandidateRepository;
-import app.data.repositories.CandidateRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,16 +1,16 @@
 package app.ControllerTests;
 
 import app.controller.VoterController;
-import app.data.models.Candidate;
 import app.data.models.Party;
 import app.data.models.Position;
 import app.data.models.Voter;
 import app.dtos.requests.CandidateRegisterRequest;
 import app.dtos.requests.RegisterRequest;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import app.dtos.responses.SavedCandidateResponse;
 import app.services.CandidateService;
 import app.services.CandidateServiceImpl;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -64,7 +64,7 @@ public class VoterControllerTests {
         voterController.registerVoter(registerRequest);
         Voter voter = voterController.findAllVoters().get(0);
 
-        Candidate candidate = new Candidate();
+        var candidate = new SavedCandidateResponse();
         CandidateService candidateService = new CandidateServiceImpl();
 
         CandidateRegisterRequest candidateRegisterRequest = new CandidateRegisterRequest();

@@ -1,4 +1,8 @@
 package app.data.models;
 
-public enum Party {APC, PDP, LABOUR, OTHERS
+public enum Party {
+    APC,
+    PDP,
+    LABOUR,
+    OTHERS
 }

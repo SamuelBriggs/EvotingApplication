@@ -4,6 +4,7 @@ import app.data.models.Candidate;
 import app.data.models.Party;
 import app.data.models.Position;
 import app.dtos.requests.CandidateRegisterRequest;
+import app.dtos.responses.SavedCandidateResponse;
 import app.services.CandidateService;
 import app.services.CandidateServiceImpl;
 import org.junit.jupiter.api.Test;
@@ -22,15 +23,17 @@ public class CandidateServicesTests {
     @Test
     public void candidateCanRegister() throws IllegalAccessException {
 
+        SavedCandidateResponse savedCandidateResponse = new SavedCandidateResponse();
+
         CandidateRegisterRequest candidateRegisterRequest = new CandidateRegisterRequest();
         candidateRegisterRequest.setName("Peter Obi");
         candidateRegisterRequest.setPosition(Position.PRESIDENT);
         candidateRegisterRequest.setParty(Party.LABOUR);
         candidateRegisterRequest.setGender("Male");
-        candidate = candidateService.register(candidateRegisterRequest);
+        savedCandidateResponse = candidateService.register(candidateRegisterRequest);
 
 
-          assertEquals(1, candidate.getId());
+          assertEquals(1, savedCandidateResponse.getId());
 
     }
     @Test
@@ -40,7 +43,7 @@ public class CandidateServicesTests {
         candidateRegisterRequest.setPosition(Position.PRESIDENT);
         candidateRegisterRequest.setParty(Party.LABOUR);
         candidateRegisterRequest.setGender("Male");
-        candidate = candidateService.register(candidateRegisterRequest);
+        candidateService.register(candidateRegisterRequest);
 
         CandidateRegisterRequest candidateRegisterRequest1 = new CandidateRegisterRequest();
         candidateRegisterRequest1.setName("Peter");
@@ -55,18 +58,22 @@ public class CandidateServicesTests {
     @Test
 
     public void viewAllCandidates() throws IllegalAccessException {
+
+        SavedCandidateResponse candidateResponse = new SavedCandidateResponse();
         CandidateRegisterRequest candidateRegisterRequest = new CandidateRegisterRequest();
         candidateRegisterRequest.setName("Peter Obi");
         candidateRegisterRequest.setPosition(Position.PRESIDENT);
         candidateRegisterRequest.setParty(Party.LABOUR);
         candidateRegisterRequest.setGender("Male");
-        candidate = candidateService.register(candidateRegisterRequest);
+        candidateResponse = candidateService.register(candidateRegisterRequest);
 
         CandidateRegisterRequest candidateRegisterRequest1 = new CandidateRegisterRequest();
         candidateRegisterRequest1.setName("Atiku");
         candidateRegisterRequest1.setParty(Party.PDP);
+        candidateRegisterRequest1.setPosition(Position.PRESIDENT);
         Candidate atiku = new Candidate();
-        atiku = candidateService.register(candidateRegisterRequest1);
+        SavedCandidateResponse candidateResponse1 = new SavedCandidateResponse();
+        candidateResponse1 = candidateService.register(candidateRegisterRequest1);
         List<Candidate> candidates = candidateService.viewAllCandidates();
         assertEquals(2, candidates.size()
         );
@@ -75,7 +82,7 @@ public class CandidateServicesTests {
     @Test
 
     public void testThatCandidatesCanBeViewedByPosition() throws IllegalAccessException {
-        Candidate atiku = new Candidate();
+        SavedCandidateResponse atiku = new SavedCandidateResponse();
         CandidateRegisterRequest candidateRegisterRequest1 = new CandidateRegisterRequest();
         candidateRegisterRequest1.setName("Atiku");
         candidateRegisterRequest1.setParty(Party.PDP);
@@ -89,7 +96,7 @@ public class CandidateServicesTests {
 
     @Test
     public void testThatCandidatesCanBeViewedByParty() throws IllegalAccessException {
-        Candidate atiku = new Candidate();
+        var atiku = new SavedCandidateResponse();
         CandidateRegisterRequest candidateRegisterRequest1 = new CandidateRegisterRequest();
         candidateRegisterRequest1.setName("Atiku");
         candidateRegisterRequest1.setParty(Party.PDP);
@@ -104,7 +111,7 @@ public class CandidateServicesTests {
     @Test
 
     public void testThatCandidateCanBeViewedByPartyAndPosition() throws IllegalAccessException {
-        Candidate atiku = new Candidate();
+       var atiku = new SavedCandidateResponse();
         CandidateRegisterRequest candidateRegisterRequest1 = new CandidateRegisterRequest();
         candidateRegisterRequest1.setName("Atiku");
         candidateRegisterRequest1.setParty(Party.PDP);
@@ -116,14 +123,14 @@ public class CandidateServicesTests {
     @Test
 
     public void testThatCandidateBioCanBeViewed() throws IllegalAccessException {
-        Candidate atiku = new Candidate();
+        var atiku = new SavedCandidateResponse();
         CandidateRegisterRequest candidateRegisterRequest1 = new CandidateRegisterRequest();
         candidateRegisterRequest1.setName("Atiku");
         candidateRegisterRequest1.setParty(Party.PDP);
         candidateRegisterRequest1.setPosition(Position.PRESIDENT);
         atiku = candidateService.register(candidateRegisterRequest1);
 
-        String bio = atiku.toString();
+        String bio = candidateService.viewCandidateBio(Position.PRESIDENT, Party.PDP);
         assertEquals(bio, candidateService.viewCandidateBio(Position.PRESIDENT, Party.PDP));
 
     }

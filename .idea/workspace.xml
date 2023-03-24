@@ -5,76 +5,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37f2edfb-dc5b-4a36-be6d-0c3eb22f2dcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_14_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_10_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_10_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_33.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/controller/VoterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/data/models/Voter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/dtos/SavedVoterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/dtos/requests/CandidateRegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/dtos/responses/FindVoterResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/CandidateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/CandidateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/VoterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/VoterServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/CandidateVotesComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/ElectionResults.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/utils/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/app/ControllerTests/VoterControllerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/app/serviceTests/CandidateServicesTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/app/serviceTests/ElectionResultsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/app/serviceTests/VoterServiceImplTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_4_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_record_codec_4_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_3_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_6_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/controller/CandidateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dtos/responses/SavedCandidateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/dtos/responses/VotedCandidateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/utils/CandidateMapperClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/models/Candidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/Party.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/models/Party.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/models/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/models/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dtos/requests/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/CandidateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/repositories/CandidateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/CandidateRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/repositories/CandidateRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/VoterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/repositories/VoterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/VoterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/repositories/VoterRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CandidateTests/CandidateRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/app/RepositoryTests/CandidateRepositoryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/VoterTests/VoterRepositoryImplTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/app/RepositoryTests/VoterRepositoryImplTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/controller/VoterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/controller/VoterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data/models/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/models/Candidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data/models/Party.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/models/Party.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data/models/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/models/Voter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data/repositories/CandidateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/repositories/CandidateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data/repositories/CandidateRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data/repositories/VoterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/repositories/VoterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data/repositories/VoterRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dtos/SavedVoterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dtos/SavedVoterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dtos/requests/CandidateRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dtos/requests/CandidateRegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dtos/requests/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dtos/requests/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dtos/responses/FindVoterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dtos/responses/FindVoterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/CandidateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/CandidateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/CandidateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/VoterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/VoterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/VoterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/VoterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/CandidateVotesComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/ElectionResults.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/controller/VoterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controller/VoterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/data/models/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/data/models/Candidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/data/models/Voter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/data/models/Voter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/data/repositories/CandidateRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/data/repositories/CandidateRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/data/repositories/CandidateRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/data/repositories/VoterRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/data/repositories/VoterRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/data/repositories/VoterRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dtos/SavedVoterResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dtos/SavedVoterResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dtos/requests/CandidateRegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dtos/requests/CandidateRegisterRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dtos/requests/RegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dtos/requests/RegisterRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/dtos/responses/FindVoterResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/dtos/responses/FindVoterResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/services/CandidateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/services/CandidateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/services/CandidateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/services/CandidateServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/services/VoterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/services/VoterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/services/VoterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/services/VoterServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/utils/ElectionResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/utils/ElectionResults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/utils/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/utils/Mapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/app/ControllerTests/VoterControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/app/ControllerTests/VoterControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/app/serviceTests/CandidateServicesTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/app/serviceTests/CandidateServicesTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/app/serviceTests/ElectionResultsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/app/serviceTests/ElectionResultsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/app/serviceTests/VoterServiceImplTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/app/serviceTests/VoterServiceImplTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/app/ControllerTests/VoterControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/app/ControllerTests/VoterControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/app/RepositoryTests/CandidateRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/app/RepositoryTests/CandidateRepositoryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/app/RepositoryTests/VoterRepositoryImplTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/app/RepositoryTests/VoterRepositoryImplTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/app/serviceTests/CandidateServicesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/app/serviceTests/CandidateServicesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/app/serviceTests/VoterServiceImplTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/app/serviceTests/VoterServiceImplTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/votingApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/votingApp.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,34 +102,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/SAMMIE/IdeaProjects/GistMeBlog1",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "b9ff8c6b4d9f303de75c7d25297127ce"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/SAMMIE/IdeaProjects/dataStructureStuff&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b9ff8c6b4d9f303de75c7d25297127ce&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dtos" />
       <recent name="data.models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VoterServiceImplTests.testThatVoterCanViewResults">
-    <configuration name="VoterServiceImplTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="CandidateServicesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="votingApp" />
       <extension name="coverage">
         <pattern>
@@ -142,13 +138,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="app.serviceTests" />
-      <option name="MAIN_CLASS_NAME" value="app.serviceTests.VoterServiceImplTests" />
+      <option name="MAIN_CLASS_NAME" value="app.serviceTests.CandidateServicesTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VoterServiceImplTests.testCastVote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CandidateServicesTests.testThatCandidateBioCanBeViewed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="votingApp" />
       <extension name="coverage">
         <pattern>
@@ -157,14 +153,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="app.serviceTests" />
-      <option name="MAIN_CLASS_NAME" value="app.serviceTests.VoterServiceImplTests" />
-      <option name="METHOD_NAME" value="testCastVote" />
+      <option name="MAIN_CLASS_NAME" value="app.serviceTests.CandidateServicesTests" />
+      <option name="METHOD_NAME" value="testThatCandidateBioCanBeViewed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VoterServiceImplTests.testThatVoterCanViewCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CandidateServicesTests.testThatCandidateCannotRegisterWithExistingPartyAndPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="votingApp" />
       <extension name="coverage">
         <pattern>
@@ -173,14 +169,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="app.serviceTests" />
-      <option name="MAIN_CLASS_NAME" value="app.serviceTests.VoterServiceImplTests" />
-      <option name="METHOD_NAME" value="testThatVoterCanViewCandidate" />
+      <option name="MAIN_CLASS_NAME" value="app.serviceTests.CandidateServicesTests" />
+      <option name="METHOD_NAME" value="testThatCandidateCannotRegisterWithExistingPartyAndPosition" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VoterServiceImplTests.testThatVoterCanViewResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CandidateServicesTests.testThatCandidatesCanBeViewedByParty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="votingApp" />
       <extension name="coverage">
         <pattern>
@@ -189,36 +185,33 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="app.serviceTests" />
-      <option name="MAIN_CLASS_NAME" value="app.serviceTests.VoterServiceImplTests" />
-      <option name="METHOD_NAME" value="testThatVoterCanViewResults" />
+      <option name="MAIN_CLASS_NAME" value="app.serviceTests.CandidateServicesTests" />
+      <option name="METHOD_NAME" value="testThatCandidatesCanBeViewedByParty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VoterServiceImplTests.testThatVotingWithInvalidIdThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="votingApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.Main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="app.serviceTests.*" />
+          <option name="PATTERN" value="app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="app.serviceTests" />
-      <option name="MAIN_CLASS_NAME" value="app.serviceTests.VoterServiceImplTests" />
-      <option name="METHOD_NAME" value="testThatVotingWithInvalidIdThrowsException" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VoterServiceImplTests.testThatVoterCanViewResults" />
-        <item itemvalue="JUnit.VoterServiceImplTests" />
-        <item itemvalue="JUnit.VoterServiceImplTests.testCastVote" />
-        <item itemvalue="JUnit.VoterServiceImplTests.testThatVoterCanViewCandidate" />
-        <item itemvalue="JUnit.VoterServiceImplTests.testThatVotingWithInvalidIdThrowsException" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="JUnit.CandidateServicesTests.testThatCandidatesCanBeViewedByParty" />
+        <item itemvalue="JUnit.CandidateServicesTests.testThatCandidateCannotRegisterWithExistingPartyAndPosition" />
+        <item itemvalue="JUnit.CandidateServicesTests.testThatCandidateBioCanBeViewed" />
+        <item itemvalue="JUnit.CandidateServicesTests" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +226,16 @@
       <workItem from="1677133859080" duration="777000" />
       <workItem from="1677578792712" duration="40694000" />
       <workItem from="1677830993214" duration="12672000" />
-      <workItem from="1677907459076" duration="29632000" />
+      <workItem from="1677907459076" duration="116893000" />
+      <workItem from="1679042725410" duration="82000" />
+      <workItem from="1679042836770" duration="5934000" />
+      <workItem from="1679242890494" duration="456000" />
+      <workItem from="1679248298812" duration="8111000" />
+      <workItem from="1679549947198" duration="7041000" />
+      <workItem from="1679595604878" duration="1951000" />
+      <workItem from="1679667230556" duration="453000" />
+      <workItem from="1679667713728" duration="638000" />
+      <workItem from="1679668388342" duration="87000" />
     </task>
     <servers />
   </component>

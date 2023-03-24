@@ -1,16 +1,9 @@
 package app.data.repositories;
 
 import app.data.models.Voter;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.List;
+public interface VoterRepository extends MongoRepository<Voter, String> {
 
-public interface VoterRepository {
-    Voter save(Voter voter);
-    Voter findVoterById(int id);
-    int countAllVoters();
-    void delete(int id);
-    void deleteAll();
-    List<Voter> returnAllVoter();
-
-
+    Voter findVoterById(String id);
 }

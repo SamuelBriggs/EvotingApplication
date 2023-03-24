@@ -5,18 +5,24 @@ import app.data.models.Party;
 import app.data.models.Position;
 import app.data.models.Voter;
 import app.data.repositories.VoterRepository;
-import app.data.repositories.VoterRepositoryImpl;
 import app.dtos.SavedVoterResponse;
 import app.dtos.requests.RegisterRequest;
-import app.utils.ElectionResults;
+import app.dtos.responses.FindVoterResponse;
+import app.dtos.responses.SavedCandidateResponse;
+import app.dtos.responses.VotedCandidateResponse;
+import app.utils.CandidateMapperClass;
 import app.utils.Mapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-
+@Service
 public class VoterServiceImpl implements VoterService{
-    private static VoterRepository voterRepository = new VoterRepositoryImpl();
-    private CandidateService candidateService = new CandidateServiceImpl();
+    @Autowired
+    private VoterRepository voterRepository;
+    @Autowired
+    private CandidateService candidateService;
 
     @Override
     public SavedVoterResponse register(RegisterRequest registerRequest) {
@@ -27,19 +33,22 @@ public class VoterServiceImpl implements VoterService{
     }
 
     @Override
-    public Voter findVoter(int id) {
+    public FindVoterResponse findVoter(String id) {
+        FindVoterResponse voterResponse = new FindVoterResponse();
         Voter voter = voterRepository.findVoterById(id);
-        return voter;
+        Mapper.map(voter, voterResponse);
+        return  voterResponse;
+
     }
 
     @Override
     public List<Voter> findAllVoters() {
-        return voterRepository.returnAllVoter();
+        return voterRepository.findAll();
 
     }
 
     @Override
-    public Candidate castVote(int voterId, Position position, Party party) throws IllegalAccessException {
+    public VotedCandidateResponse castVote(String voterId, Position position, Party party) throws IllegalAccessException {
         boolean invalidId = voterRepository.findVoterById(voterId) == null;
         if (invalidId) throw new IllegalAccessException("Id is invalid. Enter again.");
         Voter voter = voterRepository.findVoterById(voterId);
@@ -49,23 +58,26 @@ public class VoterServiceImpl implements VoterService{
             Candidate candidate = candidates.get(i);
             if (position.equals(candidate.getPosition()) && party.equals(candidate.getParty())){
                 candidate.setVotes(candidate.getVotes()+1);
+                candidateService.save(candidate);
                 voter.setHas_voted(true);
-                return candidate;
+                voterRepository.save(voter);
+                VotedCandidateResponse votedCandidateResponse = new VotedCandidateResponse();
+                CandidateMapperClass.viewVotedCandidate(candidate, votedCandidateResponse);
+                return votedCandidateResponse;
             }
 
         }
         throw new NoSuchElementException("No such Candidate Exists.");
 
     }
-
     @Override
-    public Candidate viewCandidate(Position position, Party party) {
+    public SavedCandidateResponse viewCandidate(Position position, Party party) {
         return candidateService.viewAllCandidatesByPositionAndParty(position, party);
     }
 
     @Override
-    public String viewResults() {
-        return ElectionResults.viewResults();
+    public String viewResults() throws IllegalAccessException {
+        return candidateService.viewResults();
     }
 
 

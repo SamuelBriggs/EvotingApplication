@@ -5,39 +5,54 @@ import app.data.models.Position;
 import app.data.models.Voter;
 import app.dtos.requests.RegisterRequest;
 import app.services.VoterService;
-import app.services.VoterServiceImpl;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import app.utils.ElectionResults;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
 public class VoterController {
-    private VoterService voterService = new VoterServiceImpl();
+    @Autowired
+    private VoterService voterService;
 
-    @PostMapping("register")
+    @Autowired
+
+    private ElectionResults results;
+
+    @PostMapping("voter/register")
     public Object registerVoter(@RequestBody RegisterRequest registerRequest){
         return voterService.register(registerRequest);
     }
-    @GetMapping("id")
-    public Object findVoter(int id){
+    @GetMapping("voter/{id}")
+    public Object findVoter(@PathVariable String id){
         return voterService.findVoter(id);
     }
 
-
-    public Object viewCandidate(Position position, Party party){
-        return voterService.viewCandidate(position, party);
+    @GetMapping("voter/viewCandidate")
+    public ResponseEntity<?> viewCandidate(@RequestParam Position position, @RequestParam Party party){
+        try {
+            return new ResponseEntity<>(voterService.viewCandidate(position, party), HttpStatus.CREATED);
+        } catch (NullPointerException ex){
+            return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
+    @PutMapping("voter/castVote")
+    public ResponseEntity<?> castVote(@RequestParam String voterId, @RequestParam Position position, @RequestParam Party party){
+        try {
+            return new ResponseEntity<>(voterService.castVote(voterId, position, party), HttpStatus.CREATED);
+        }catch (IllegalAccessException ex){
+            return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+        }
 
-
+    }
 
     public List<Voter> findAllVoters() {
         return voterService.findAllVoters();
     }
-
-
-    public String viewResults(){
-        return voterService.viewResults();
+    @GetMapping("voter/viewResult")
+    public String viewResults() throws IllegalAccessException {
+        return results.viewResults();
     }
 }

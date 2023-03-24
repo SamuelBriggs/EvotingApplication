@@ -2,7 +2,6 @@ package app.RepositoryTests;
 
 import app.data.models.Voter;
 import app.data.repositories.VoterRepository;
-import app.data.repositories.VoterRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

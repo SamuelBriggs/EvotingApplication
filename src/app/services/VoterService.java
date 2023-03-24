@@ -1,22 +1,24 @@
 package app.services;
 
-import app.data.models.Candidate;
 import app.data.models.Party;
 import app.data.models.Position;
 import app.data.models.Voter;
 import app.dtos.SavedVoterResponse;
 import app.dtos.requests.RegisterRequest;
+import app.dtos.responses.FindVoterResponse;
+import app.dtos.responses.SavedCandidateResponse;
+import app.dtos.responses.VotedCandidateResponse;
 
 import java.util.List;
 
 public interface VoterService {
     SavedVoterResponse register(RegisterRequest registerRequest);
-    Voter findVoter(int id);
+    FindVoterResponse findVoter(String id);
     List<Voter> findAllVoters();
-    Candidate castVote(int voterId, Position position, Party party) throws IllegalAccessException;
+    VotedCandidateResponse castVote(String voterId, Position position, Party party) throws IllegalAccessException;
 
-    Candidate viewCandidate(Position position, Party party);
+    SavedCandidateResponse viewCandidate(Position position, Party party);
 
-    String viewResults();
+    String viewResults() throws IllegalAccessException;
 
 }

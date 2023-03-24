@@ -7,6 +7,7 @@ import app.data.repositories.CandidateRepository;
 import app.dtos.SavedVoterResponse;
 import app.dtos.requests.CandidateRegisterRequest;
 import app.dtos.requests.RegisterRequest;
+import app.dtos.responses.SavedCandidateResponse;
 import app.services.CandidateService;
 import app.services.CandidateServiceImpl;
 import app.services.VoterService;
@@ -41,7 +42,7 @@ public class VoterServiceImplTests {
 
      }
      @Test
-     public void findAlVotersTest(){
+     public void findAllVotersTest(){
          voterService = new VoterServiceImpl();
          registerRequest = new RegisterRequest();
         SavedVoterResponse savedVoter = voterService.register(registerRequest);
@@ -58,7 +59,7 @@ public class VoterServiceImplTests {
          candidateRegisterRequest.setParty(Party.LABOUR);
          candidateRegisterRequest.setPosition(Position.PRESIDENT);
 
-        Candidate candidate1 =  candidateService.register(candidateRegisterRequest);
+        var candidate1 = candidateService.register(candidateRegisterRequest);
 
          RegisterRequest registerRequest1 = new RegisterRequest();
          registerRequest1.setFirstName("Samuel");
@@ -84,7 +85,7 @@ public class VoterServiceImplTests {
          candidateRegisterRequest.setParty(Party.LABOUR);
          candidateRegisterRequest.setPosition(Position.PRESIDENT);
 
-         Candidate candidate1 =  candidateService.register(candidateRegisterRequest);
+         var candidate1 =  candidateService.register(candidateRegisterRequest);
 
          RegisterRequest registerRequest1 = new RegisterRequest();
          registerRequest1.setFirstName("Samuel");
@@ -118,7 +119,7 @@ public class VoterServiceImplTests {
 
          voterService = new VoterServiceImpl();
          candidateService = new CandidateServiceImpl();
-         Candidate atiku = new Candidate();
+         var atiku = new SavedCandidateResponse();
          CandidateRegisterRequest candidateRegisterRequest1 = new CandidateRegisterRequest();
          candidateRegisterRequest1.setName("Atiku");
          candidateRegisterRequest1.setParty(Party.PDP);
@@ -140,7 +141,7 @@ public class VoterServiceImplTests {
          candidateRegisterRequest.setParty(Party.PDP);
          candidateRegisterRequest.setName("Atiku");
          candidateService = new CandidateServiceImpl();
-         Candidate candidate = candidateService.register(candidateRegisterRequest);
+         var candidate = candidateService.register(candidateRegisterRequest);
 
 
          CandidateRegisterRequest candidateRegisterRequest1 = new CandidateRegisterRequest();
@@ -148,14 +149,14 @@ public class VoterServiceImplTests {
          candidateRegisterRequest1.setParty(Party.APC);
          candidateRegisterRequest1.setName("Obi");
 
-         Candidate candidate1 = candidateService.register(candidateRegisterRequest1);
+         var candidate1 = candidateService.register(candidateRegisterRequest1);
 
          CandidateRegisterRequest candidateRegisterRequest2 = new CandidateRegisterRequest();
          candidateRegisterRequest2.setPosition(Position.PRESIDENT);
          candidateRegisterRequest2.setParty(Party.LABOUR);
          candidateRegisterRequest2.setName("Tinubu");
 
-         Candidate candidate2 = candidateService.register(candidateRegisterRequest2);
+         var candidate2 = candidateService.register(candidateRegisterRequest2);
 
 
          registerRequest = new RegisterRequest();

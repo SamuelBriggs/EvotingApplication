@@ -1,11 +1,9 @@
 package app.utils;
 
-import app.data.models.Candidate;
-import app.dtos.requests.CandidateRegisterRequest;
-import app.dtos.responses.FindVoterResponse;
 import app.data.models.Voter;
 import app.dtos.SavedVoterResponse;
 import app.dtos.requests.RegisterRequest;
+import app.dtos.responses.FindVoterResponse;
 
 public class Mapper {
     public static Voter savedVoterMap(RegisterRequest registerRequest){
@@ -15,24 +13,17 @@ public class Mapper {
         voter.setGender(registerRequest.getGender());
         voter.setState(registerRequest.getState());
         voter.setId(registerRequest.getId());
+        voter.setAge(registerRequest.getAge());
         return voter;
     }
 
-    public static Candidate mapCandidate(CandidateRegisterRequest candidateRegisterRequest){
-        Candidate candidate = new Candidate();
-        candidate.setName(candidateRegisterRequest.getName());
-        candidate.setParty(candidateRegisterRequest.getParty());
-        candidate.setPosition(candidateRegisterRequest.getPosition());
-        candidate.setGender(candidateRegisterRequest.getGender());
-        candidate.setAge(candidateRegisterRequest.getAge());
-        candidate.setBio(candidateRegisterRequest.getBio());
-        candidate.setVotes(candidateRegisterRequest.getVotes());
-        return  candidate;
-    }
 
     public static void map (Voter voter, FindVoterResponse response){
         response.setGender(voter.getGender());
         response.setState(voter.getState());
+        response.setFullName(voter.getFirstName() + " " + voter.getLastName());
+        response.setAge(voter.getAge());
+        response.setVoterId(voter.getId());
     }
 
     public static void returnViewOfSavedVoter(Voter voter, SavedVoterResponse response){
@@ -41,6 +32,7 @@ public class Mapper {
         response.setState(voter.getState());
         response.setGender(voter.getGender());
         response.setId(voter.getId());
+        response.setAge(voter.getAge());
 
     }
 }
